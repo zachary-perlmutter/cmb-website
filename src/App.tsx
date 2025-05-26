@@ -15,8 +15,8 @@ import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
-import CookieConsent from "react-cookie-consent";
 import HamburgerTest from "./components/HamburgerTest";
+import CookieConsent from "react-cookie-consent";
 
 const queryClient = new QueryClient();
 
@@ -48,53 +48,54 @@ const App = () => (
           declineButtonText="Decline"
           enableDeclineButton
           style={{
-            background: "rgba(31, 41, 55, 0.95)",
+            background: "rgba(31, 41, 55, 0.92)",
             color: "#fff",
-            borderRadius: "1rem",
-            margin: "0 1rem 0.75rem 1rem",
-            maxWidth: 320,
-            width: "100%",
+            borderRadius: 0,
+            margin: 0,
+            maxWidth: "100vw",
+            width: "100vw",
             left: 0,
             right: 0,
-            marginLeft: "auto",
-            marginRight: "auto",
-            boxShadow: "0 4px 24px 0 rgba(0,0,0,0.10)",
-            padding: "0.75rem 1rem 0.25rem 1rem",
-            fontSize: "0.95rem",
+            marginLeft: 0,
+            marginRight: 0,
+            boxShadow: "0 -2px 12px 0 rgba(0,0,0,0.08)",
+            padding: "0.5rem 0.75rem 0.5rem 0.75rem",
+            fontSize: "0.92rem",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "row",
             alignItems: "center",
+            justifyContent: "space-between",
+            position: "fixed",
+            bottom: 0,
+            zIndex: 1000,
           }}
           buttonStyle={{
             background: "linear-gradient(90deg, #fb923c 0%, #fde047 100%)",
             color: "#222",
             borderRadius: "9999px",
-            fontWeight: 700,
-            padding: "0.6rem 1.2rem",
-            margin: "0.25rem 0 0 0",
+            fontWeight: 600,
+            padding: "0.4rem 1.1rem",
+            margin: "0 0 0 0.5rem",
             border: "none",
-            width: "90%",
-            maxWidth: 280,
-            fontSize: "1rem",
-            display: "block",
+            fontSize: "0.95rem",
+            display: "inline-block",
           }}
           declineButtonStyle={{
             background: "#fff",
             color: "#fb923c",
             borderRadius: "9999px",
-            fontWeight: 700,
-            padding: "0.6rem 1.2rem",
-            margin: "0.25rem 0 0 0",
+            fontWeight: 600,
+            padding: "0.4rem 1.1rem",
+            margin: "0 0 0 0.5rem",
             border: "none",
-            width: "90%",
-            maxWidth: 280,
-            fontSize: "1rem",
-            display: "block",
+            fontSize: "0.95rem",
+            display: "inline-block",
           }}
           contentStyle={{
-            fontSize: "0.95rem",
-            textAlign: "center",
+            fontSize: "0.92rem",
+            textAlign: "left",
             marginBottom: 0,
+            flex: 1,
           }}
           expires={365}
         >
