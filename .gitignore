@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables
+.env
+.env.*
+
+# Build output
+build
+coverage
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Misc
+*.pem
+*.key
+*.crt
