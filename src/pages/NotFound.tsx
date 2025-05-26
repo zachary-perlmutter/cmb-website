@@ -14,9 +14,9 @@ const NotFound = () => {
             404
           </span>
           <img
-            src="/images/new-cmb-logo-black.png"
+            src="/images/cmb-logo-trans-gradient.png"
             alt="Code Meets Bagel Logo"
-            className="h-24 w-24 md:h-32 md:w-32 mb-6 rounded-full shadow-lg object-contain"
+            className="h-24 w-24 md:h-32 md:w-32 mb-6 object-contain"
           />
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Oops! This page got lost in the bagel shop.
