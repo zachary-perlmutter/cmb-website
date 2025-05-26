@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-orange-50 pt-32 pb-32">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-5xl md:text-8xl font-bold text-gray-900 mb-6 leading-tight">
             Automate it.
             <br />
             <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
