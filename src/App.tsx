@@ -51,33 +51,45 @@ const App = () => (
             background: "rgba(31, 41, 55, 0.95)",
             color: "#fff",
             borderRadius: "1rem",
-            margin: "1rem",
-            maxWidth: 600,
+            margin: "0.5rem",
+            maxWidth: "95vw",
+            width: "100%",
             left: 0,
             right: 0,
             marginLeft: "auto",
             marginRight: "auto",
             boxShadow: "0 4px 24px 0 rgba(0,0,0,0.10)",
+            padding: "1.25rem 1rem",
+            fontSize: "1rem",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
           buttonStyle={{
             background: "linear-gradient(90deg, #fb923c 0%, #fde047 100%)",
             color: "#222",
             borderRadius: "9999px",
             fontWeight: 700,
-            padding: "0.75rem 2rem",
-            marginLeft: 8,
+            padding: "0.9rem 2.2rem",
+            margin: "0.5rem 0 0 0",
             border: "none",
+            width: "100%",
+            maxWidth: 320,
+            fontSize: "1.1rem",
           }}
           declineButtonStyle={{
             background: "#fff",
             color: "#fb923c",
             borderRadius: "9999px",
             fontWeight: 700,
-            padding: "0.75rem 2rem",
-            marginLeft: 8,
+            padding: "0.9rem 2.2rem",
+            margin: "0.5rem 0 0 0",
             border: "none",
+            width: "100%",
+            maxWidth: 320,
+            fontSize: "1.1rem",
           }}
-          contentStyle={{ fontSize: "1rem" }}
+          contentStyle={{ fontSize: "1rem", textAlign: "center" }}
           expires={365}
         >
           We use cookies to enhance your experience and analyze site usage. Read
