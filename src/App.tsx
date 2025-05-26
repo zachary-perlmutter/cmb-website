@@ -16,6 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import CookieConsent from "react-cookie-consent";
+import HamburgerTest from "./components/HamburgerTest";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/audit" element={<Audit />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/hamburger" element={<HamburgerTest />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <CookieConsent
