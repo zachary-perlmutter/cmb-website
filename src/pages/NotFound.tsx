@@ -1,25 +1,40 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaRegSadTear } from "react-icons/fa";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
-      </div>
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-orange-50 to-yellow-50">
+      <Navigation />
+      <main className="flex-1 flex flex-col items-center justify-center text-center px-6 pt-32 pb-24">
+        <div className="flex flex-col items-center">
+          <span className="text-7xl md:text-9xl font-extrabold text-orange-400 mb-4">
+            404
+          </span>
+          <img
+            src="/images/new-cmb-logo-black.png"
+            alt="Code Meets Bagel Logo"
+            className="h-24 w-24 md:h-32 md:w-32 mb-6 rounded-full shadow-lg object-contain"
+          />
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Oops! This page got lost in the bagel shop.
+          </h1>
+          <p className="text-lg text-gray-600 mb-8 max-w-xl">
+            The page you're looking for doesn't exist or has been moved. But
+            don't worry, you can always head back to the homepage and grab a
+            fresh start!
+          </p>
+          <Link
+            to="/"
+            className="inline-block bg-gradient-to-r from-orange-400 to-yellow-400 text-white px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+          >
+            Go Home
+          </Link>
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 };

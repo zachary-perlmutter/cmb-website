@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +12,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Audit from "./pages/Audit";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import CookieConsent from "react-cookie-consent";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +25,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
@@ -32,8 +36,58 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<Contact />} />
           <Route path="/audit" element={<Audit />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          declineButtonText="Decline"
+          enableDeclineButton
+          style={{
+            background: "rgba(31, 41, 55, 0.95)",
+            color: "#fff",
+            borderRadius: "1rem",
+            margin: "1rem",
+            maxWidth: 600,
+            left: 0,
+            right: 0,
+            marginLeft: "auto",
+            marginRight: "auto",
+            boxShadow: "0 4px 24px 0 rgba(0,0,0,0.10)",
+          }}
+          buttonStyle={{
+            background: "linear-gradient(90deg, #fb923c 0%, #fde047 100%)",
+            color: "#222",
+            borderRadius: "9999px",
+            fontWeight: 700,
+            padding: "0.75rem 2rem",
+            marginLeft: 8,
+            border: "none",
+          }}
+          declineButtonStyle={{
+            background: "#fff",
+            color: "#fb923c",
+            borderRadius: "9999px",
+            fontWeight: 700,
+            padding: "0.75rem 2rem",
+            marginLeft: 8,
+            border: "none",
+          }}
+          contentStyle={{ fontSize: "1rem" }}
+          expires={365}
+        >
+          We use cookies to enhance your experience and analyze site usage. Read
+          our{" "}
+          <a
+            href="/privacy"
+            style={{ color: "#fde047", textDecoration: "underline" }}
+          >
+            Privacy Policy
+          </a>
+          .
+        </CookieConsent>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

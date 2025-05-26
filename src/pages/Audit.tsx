@@ -1,12 +1,13 @@
-
-import React from 'react';
-import Navigation from '../components/Navigation';
+import React from "react";
+import Navigation from "../components/Navigation";
+import { FaSearch } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 const Audit = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-orange-50 to-yellow-50">
       <Navigation />
-      
+
       <section className="pt-32 pb-24">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -18,17 +19,21 @@ const Audit = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Take our 60-second audit and discover where you can save hours every week.
+              Take our 60-second audit and discover where you can save hours
+              every week.
             </p>
           </div>
 
           <div className="bg-white rounded-3xl p-12 border border-gray-200 shadow-xl">
-            <div className="text-center mb-8">
-              <div className="w-20 h-20 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-3xl mx-auto mb-6 flex items-center justify-center">
-                <span className="text-white text-3xl">🔍</span>
-              </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Free Automation Audit</h2>
-              <p className="text-gray-600">Answer a few quick questions to get your personalized automation roadmap.</p>
+            <div className="text-center mb-12">
+              <span className="text-white text-3xl">
+                <FaSearch className="text-4xl" />
+              </span>
+              <h2 className="text-3xl font-bold mt-4 mb-2">Technical Audit</h2>
+              <p className="text-gray-600">
+                Get a comprehensive review of your current systems and
+                processes.
+              </p>
             </div>
 
             <form className="space-y-6">
@@ -38,23 +43,43 @@ const Audit = () => {
                 </label>
                 <div className="space-y-3">
                   <label className="flex items-center">
-                    <input type="radio" name="timeWaster" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="timeWaster"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>Manual data entry and admin tasks</span>
                   </label>
                   <label className="flex items-center">
-                    <input type="radio" name="timeWaster" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="timeWaster"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>Follow-up emails and client communication</span>
                   </label>
                   <label className="flex items-center">
-                    <input type="radio" name="timeWaster" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="timeWaster"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>Scheduling and calendar management</span>
                   </label>
                   <label className="flex items-center">
-                    <input type="radio" name="timeWaster" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="timeWaster"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>Lead routing and assignment</span>
                   </label>
                   <label className="flex items-center">
-                    <input type="radio" name="timeWaster" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="timeWaster"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>Reporting and analytics</span>
                   </label>
                 </div>
@@ -66,15 +91,27 @@ const Audit = () => {
                 </label>
                 <div className="space-y-3">
                   <label className="flex items-center">
-                    <input type="radio" name="hours" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="hours"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>5-10 hours</span>
                   </label>
                   <label className="flex items-center">
-                    <input type="radio" name="hours" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="hours"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>10-20 hours</span>
                   </label>
                   <label className="flex items-center">
-                    <input type="radio" name="hours" className="mr-3 text-orange-500" />
+                    <input
+                      type="radio"
+                      name="hours"
+                      className="mr-3 text-orange-500"
+                    />
                     <span>20+ hours</span>
                   </label>
                 </div>
@@ -125,6 +162,7 @@ const Audit = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

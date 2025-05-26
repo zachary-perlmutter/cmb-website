@@ -1,10 +1,10 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaBolt, FaRocket, FaMobile } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-orange-50 pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-50 to-orange-50 pt-32 pb-32">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <div className="animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 leading-tight">
@@ -16,11 +16,12 @@ const Hero = () => {
             <br />
             Scale it.
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            We help business owners automate operations and launch custom apps—fast.
+            We help business owners automate operations and launch custom
+            apps—fast.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Link
               to="/audit"
@@ -36,32 +37,38 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        
+
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-yellow-400/20 blur-3xl rounded-full"></div>
           <div className="relative bg-white/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-red-400 to-orange-400 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl">⚡</span>
+                  <FaBolt className="text-white text-2xl" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Wasting time on repeat tasks?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Wasting time on repeat tasks?
+                </h3>
                 <p className="text-gray-600">→ Automate it.</p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-orange-400 to-yellow-400 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl">🚀</span>
+                  <FaRocket className="text-white text-2xl" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Need a portal or internal tool?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Need a portal or internal tool?
+                </h3>
                 <p className="text-gray-600">→ Build it.</p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-green-400 rounded-2xl mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl">📱</span>
+                  <FaMobile className="text-white text-2xl" />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Want to launch an MVP app fast?</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Want to launch an MVP app fast?
+                </h3>
                 <p className="text-gray-600">→ We got you.</p>
               </div>
             </div>
