@@ -17,6 +17,9 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import HamburgerTest from "./components/HamburgerTest";
 import Demos from "./pages/Demos";
+import Landing from "./pages/Landing";
+import MVPFunding from "./pages/MVPFunding";
+import StartupQuiz from "./pages/StartupQuiz";
 import CookieConsent from "react-cookie-consent";
 
 const queryClient = new QueryClient();
@@ -30,6 +33,9 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/landing" element={<Landing />} />
+          <Route path="/mvp-funding" element={<MVPFunding />} />
+          <Route path="/startup-quiz" element={<StartupQuiz />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/automation" element={<AutomationServices />} />
           <Route path="/services/web-apps" element={<WebApps />} />
