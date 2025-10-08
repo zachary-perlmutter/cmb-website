@@ -20,6 +20,7 @@ import Demos from "./pages/Demos";
 import Landing from "./pages/Landing";
 import MVPFunding from "./pages/MVPFunding";
 import StartupQuiz from "./pages/StartupQuiz";
+import MobileAppGuide from "./pages/MobileAppGuide";
 import CookieConsent from "react-cookie-consent";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/landing" element={<Landing />} />
           <Route path="/mvp-funding" element={<MVPFunding />} />
           <Route path="/startup-quiz" element={<StartupQuiz />} />
+          <Route path="/mobile-app-guide" element={<MobileAppGuide />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/automation" element={<AutomationServices />} />
           <Route path="/services/web-apps" element={<WebApps />} />
